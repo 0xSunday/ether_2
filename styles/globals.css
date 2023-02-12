@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&family=Source+Code+Pro&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+}
+.bg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C496BF', endColorstr='#E2DFE1', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(226, 223, 225, 1) 0%,
+    rgba(216, 206, 216, 1) 50%,
+    rgba(196, 150, 191, 1) 99%
+  );
+}
+
+.hover {
+  --s: 0.2em; /* the thickness of the line */
+  --c: black; /* the color */
+
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+.hover:hover {
+  --_p: 100%;
+  color: pink;
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform 0.2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
